@@ -1,0 +1,29 @@
+<h2>Structural Directives</h2>
+
+<!-- *ngIf Directive -->
+<div *ngIf="isVisible">This div is visible if isVisible is true.</div>
+<button (click)="isVisible = !isVisible">Toggle Visibility</button>
+
+<!-- *ngFor Directive -->
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<!-- *ngSwitch Directive -->
+<div [ngSwitch]="value">
+  <ng-template [ngSwitchCase]="'A'">Value is A</ng-template>
+  <ng-template [ngSwitchCase]="'B'">Value is B</ng-template>
+  <ng-template ngSwitchDefault>Value is unknown</ng-template>
+</div>
+<button (click)="value = 'A'">Set Value to A</button>
+<button (click)="value = 'B'">Set Value to B</button>
+<button (click)="value = 'C'">Set Value to C</button>
+
+<h2>Attribute Directives</h2>
+
+<!-- ngClass Directive -->
+<p [ngClass]="{ 'highlighted': isVisible }">This text is conditionally highlighted.</p>
+
+<!-- ngStyle Directive -->
+<p [ngStyle]="{ 'color': isVisible ? 'blue' : 'red' }">This text color changes based on isVisible.</p>
+

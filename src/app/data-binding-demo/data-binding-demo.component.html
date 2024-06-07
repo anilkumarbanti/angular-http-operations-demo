@@ -1,0 +1,14 @@
+<p>data-binding-demo works!</p>
+
+<!-- Interpolation Example -->
+<h2>{{ title }}</h2>
+
+<!-- Property Binding Example -->
+<img [src]="imageUrl" alt="Placeholder Image">
+
+<!-- Event Binding Example -->
+<button (click)="handleClick()">{{ buttonText }}</button>
+
+<!-- Two-way Binding Example -->
+<input [(ngModel)]="inputValue" placeholder="Enter text">
+<p>You entered: {{ inputValue }}</p>
