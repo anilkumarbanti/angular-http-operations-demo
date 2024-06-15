@@ -57,6 +57,16 @@ This repository contains code examples and demonstrations for a guest lecture on
 - Creating and validating forms in Angular
 - Handling form submissions
 
+### Cloning the Repository
+    ```bash
+    git clone https://github.com/anilkumarbanti/angular-http-operations-demo.git
+    cd angular-http-operations-demo
+    npm install
+    ng serve
+
+- Open your browser and navigate to http://localhost:4200. You should see the application running with buttons to perform GET, POST, PUT, and DELETE operations.
+
+
 ## HTTP Client in Angular
 
 ### Introduction
